@@ -1,0 +1,93 @@
+.top-section {
+  width: 100%;              
+  background: #fff;
+  border-bottom: 1px solid #cfcccc;
+  box-shadow: 0 1px 2px rgba(124, 123, 123, 0.05);
+}
+
+.top-inner {
+  width: 100%;                 /* ✅ ensures full width */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* Left Side (School Info) */
+.school-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.school-title {
+  color: #0d5ca6;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.school-subtitle {
+  color: #0d5ca6;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Right Side (Icons) */
+.nav-icons {
+  display: flex;
+  gap: 9px;
+  margin-right: 1.5rem;
+}
+
+.icon-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #c2def8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.icon-box:hover {
+  background: #f0f8ff;
+}
+
+
+.top-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.left-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* spacing between icon and text */
+}
+
+.sidebar-toggle {
+  background-color: #d5ebf9;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.school-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}

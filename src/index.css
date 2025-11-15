@@ -6,13 +6,101 @@ html, body {
   overflow: hidden; /* 🔑 prevents any scrolling */
 }
 
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container{
+  display: flex;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+.sidebar {
+  background: #B5E2FE;
+  color:black;
+  height: 100vh;
+  width: 250px;
+  transition: all 0.5s;
+
+}
+
+.top-section{
+  display: flex;
+  align-items: center;
+
+}
+
+.logo{
+  font-size:30px;
+
+}
+
+
+.FiSidebar{
+  background-color:#60c1fd;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+
+}
+
+.link{
+  display: flex;
+  color: rgb(107, 104, 104);
+  padding: 10px 15px;
+  gap: 25px;
+  transition: all o.5s;
+
+}
+
+
+.link:hover{
+
+  background: #b1e1ff;
+  color: rgba(43, 73, 132, 0.905);
+  transition: all 0.5s;
+}
+
+
+.active{
+  background: #2d52699f;
+}
+.icon, .link-text{
+
+  font-size: 20px;
+  margin-left: 4px;
+
+}
+
+
+
+
+/* 
 .nav-link {
   text-decoration: none;
   color: #0b2f4a;
   transition: color 0.3s ease, text-decoration 0.3s ease;
-}
+} */
 
+/* 
 .nav-link:hover {
-  color: #0d5490; /* slightly brighter blue */
+  color: #0d5490;
   text-decoration: underline;
-}
+} 
+
+*/
+
+

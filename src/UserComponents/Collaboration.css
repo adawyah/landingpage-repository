@@ -1,0 +1,313 @@
+/* === Container === */
+.collaboration-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0;
+  align-items: flex-start;
+}
+
+/* Title */
+.collaboration-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* === Button group === */
+.button-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  min-width: 150px;
+  text-align: center;
+}
+
+.btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover:enabled {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.btn-outline:hover {
+  background: #f9f9f9;
+}
+
+/* === Cards Grid (all collaborations) === */
+.collab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.collab-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.collab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.collab-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.collab-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.25rem 0;
+}
+
+/* === Detail view === */
+.detail-view {
+  padding: 1rem;
+}
+
+.detail-view h2 {
+  margin-bottom: 0.5rem;
+}
+
+.detail-view h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* === Paper cards === */
+.paper-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.paper-card h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.paper-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* File input styling */
+.paper-card input[type="file"] {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* File versions list */
+.paper-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.paper-card ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* === Modal === */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* Modal form */
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.modal-box input,
+.modal-box select,
+.modal-box textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+/* ===== Detail Page ===== */
+.collab-detail {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.detail-header {
+  margin-bottom: 2rem;
+}
+.detail-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.detail-desc {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Section blocks */
+.detail-section {
+  margin-bottom: 2rem;
+}
+.detail-section h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+/* Advisor */
+.advisor-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Member chips */
+.member-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chip {
+  background: #f1f5f9;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+}
+
+/* New paper input + button */
+.new-paper-form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.new-paper-form input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Papers grid */
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Paper card */
+.paper-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.paper-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.status {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Upload box */
+.upload-box {
+  margin: 0.5rem 0;
+}
+.upload-label {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.upload-label input[type="file"] {
+  font-size: 0.85rem;
+}
+
+/* Version list */
+.version-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.version-list li {
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+}
+.version-list li strong {
+  color: #2563eb;
+}
+.no-files {
+  font-size: 0.9rem;
+  color: #888;
+}

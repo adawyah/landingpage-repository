@@ -1,0 +1,274 @@
+/* Container */
+.faculty-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.faculty-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.faculty-header h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.faculty-header p {
+  color: #666;
+}
+
+/* Departments */
+.departments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.department-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.department-card:hover {
+  border-color: #c8d1f5;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+}
+.department-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+.department-card span {
+  font-weight: bold;
+  color: #c7c4f8;
+}
+
+/* Requests */
+.requests h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.empty-message {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.requests-table th,
+.requests-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.requests-table thead {
+  background: #f9fafb;
+}
+.requests-table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+/* Actions */
+.actions {
+  text-align: center;
+}
+.btn-approve,
+.btn-reject {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-approve {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  margin-right: 0.4rem;
+}
+.btn-approve:hover {
+  background: #16a34a;
+}
+.btn-reject {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+}
+.btn-reject:hover {
+  background: #dc2626;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  flex-direction: column;
+}
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #c3c1e1;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 0.5rem;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Make departments aligned to left in a grid */
+/* 
+
+.departments-toolbar {
+  margin-bottom: 1rem;
+  text-align: left; /* keep aligned, not centered */
+
+.btn-department-list {
+  padding: 0.5rem 1rem;
+  background-color: #c5dcf4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-department-list:hover {
+  background-color: #8bc3ff;
+}
+
+
+/* Header + button in one line */
+.departments-header {
+  display: flex;
+  justify-content: space-between; /* title left, button right */
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Department List Button */
+.btn-department-list {
+  padding: 0.5rem 1rem;
+  background-color: #abd0f7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-department-list:hover {
+  background-color: #8ebef2;
+}
+
+/* Department cards grid */
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+
+/* Tabs Section */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.tab {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #e2e2e2;
+}
+
+.tab.active {
+  background-color: #81aede;
+  color: white;
+  font-weight: 600;
+  transform: scale(1.05);
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+/* Empty Message */
+.empty-message {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.btn-approve {
+  background-color: #28a745;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-approve:hover {
+  background-color: #218838;
+}
+
+.btn-reject {
+  background-color: #dc3545;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-reject:hover {
+  background-color: #c82333;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}

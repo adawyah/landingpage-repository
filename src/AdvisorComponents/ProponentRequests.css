@@ -1,0 +1,73 @@
+.proponent-container {
+  padding: 1.5rem;
+  max-width: 900px;   /* narrower since fewer columns */
+  margin: 0 auto;
+}
+
+.proponent-header {
+  margin-bottom: 1.5rem;
+  text-align: center;   /* center the title and subtitle */
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #f3f7fb;
+}
+
+.requests-table th,
+.requests-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;   /* center the text for a cleaner look */
+}
+
+.requests-table th {
+  background: #f6f9fc;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;  /* equal spacing between buttons */
+}
+
+.actions button {
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.35rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.btn-approve {
+  background-color: #4f46e5;
+  color: white;
+}
+.btn-approve:hover {
+  background-color: #4338ca;
+}
+
+.btn-reject {
+  background-color: #dc2626;
+  color: white;
+}
+.btn-reject:hover {
+  background-color: #b91c1c;
+}
+
+.empty-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}

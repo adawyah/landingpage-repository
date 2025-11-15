@@ -1,0 +1,204 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 🔑 prevents any scrolling */
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container{
+  display: flex;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+.sidebar {
+  background: #c6e5f8;
+  color:black;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+
+}
+
+.top-section{
+  display: flex;
+  align-items: center;
+
+}
+
+/* .logo{
+  font-size:30px;
+
+} */
+
+
+.FiSidebar{
+  background-color:#bbe5ff;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+
+}
+
+/* .link{
+  display: flex;
+  color: rgb(77, 74, 74);
+  padding: 10px 15px;
+  gap: 25px;
+  transition: all o.5s;
+
+} */
+
+/* 
+.link:hover{
+
+  background: #b1e1ff;
+  color: rgba(43, 73, 132, 0.905);
+  transition: all 0.5s;
+} */
+.link {
+  display: flex;
+  align-items: center;       /* Center icon & text vertically */
+  justify-content: flex-start;
+  color: rgb(77, 74, 74);
+  padding: 14px 18px;        /* More padding for breathing space */
+  gap: 16px;                 /* Controls spacing between icon & text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-top: .5rem;
+}
+
+
+
+
+.active{
+  background: #e3eeff;
+} 
+
+
+/* 
+
+.active{
+  background: #e3eeff;
+} */
+/* .icon, .link-text{
+
+  font-size: 20px;
+  margin-left: 4px;
+
+} */
+
+/* Enhanced Logout Button */
+.logout-btn {
+  width: calc(100% - 2rem);
+  margin: 1rem 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.logout-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+
+.logout-btn:hover::before {
+  left: 0;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+
+/* 
+.nav-link {
+  text-decoration: none;
+  color: #0b2f4a;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+} */
+
+/* 
+.nav-link:hover {
+  color: #0d5490;
+  text-decoration: underline;
+} 
+
+*/
+
+
+.admin-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #c2e8ff;
+  transition: all 0.5s;
+  height: 100vh;
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* stack TopSection above content */
+}
+
+.main-content {
+  flex: 1;
+  background: #d23434;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+
+/* Logo styles */
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  padding: 1.5rem 1.5rem 0;
+cursor: pointer;
+}
+
+.sidebar-logo .logo-img {
+  width: 150px;
+  margin-right: .5rem ;
+  background: var(--inputColor);
+  border-radius: 2px;
+  padding: .2rem;
+}
